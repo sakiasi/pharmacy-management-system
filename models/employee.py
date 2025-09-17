@@ -14,3 +14,5 @@ class PharmacyEmployee(models.Model):
         ('assistant', 'Assistant'),
         ('manager', 'Manager')
     ], string='Position', required=True)
+    
+    #test
