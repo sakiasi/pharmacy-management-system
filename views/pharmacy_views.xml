@@ -1,0 +1,49 @@
+<odoo>
+    <!-- Form view for employees -->
+    <record id="pharmacy_employee_form" model="ir.ui.view">
+        <field name="name">pharmacy.employee.form</field>
+        <field name="model">pharmacy.employee</field>
+        <field name="arch" type="xml">
+            <form string="Employee">
+                <sheet>
+                    <!-- Personal Info -->
+                    <group string="Personal Info" col="2">
+                        <field name="name" class="o_field_bordered" placeholder="Enter full name"/>
+                        <field name="dob" class="o_field_bordered"/>
+                        <field name="phone" class="o_field_bordered"/>
+                        <field name="email" class="o_field_bordered"/>
+                        <field name="position" class="o_field_bordered"/>
+                    </group>
+
+                    <!-- Address -->
+                    <group string="Address">
+                        <field name="address" widget="text" placeholder="Enter address here" class="o_field_bordered"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- List view for employees with icon -->
+    <record id="pharmacy_employee_list" model="ir.ui.view">
+        <field name="name">pharmacy.employee.list</field>
+        <field name="model">pharmacy.employee</field>
+        <field name="arch" type="xml">
+            <list string="Employees">
+                <!-- Icon column -->
+                <field name="name"/>
+                   <field name="dob"/>
+                <field name="phone"/>
+                <field name="email"/>
+                <field name="position"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Action using only list + form -->
+    <record id="pharmacy_employee_action" model="ir.actions.act_window">
+        <field name="name">Pharmacy Employees</field>
+        <field name="res_model">pharmacy.employee</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
