@@ -8,16 +8,16 @@
                 <sheet>
                     <!-- Personal Info -->
                     <group string="Personal Info" col="2">
-                        <field name="name" class="o_field_bordered" placeholder="Enter full name"/>
-                        <field name="dob" class="o_field_bordered"/>
-                        <field name="phone" class="o_field_bordered"/>
-                        <field name="email" class="o_field_bordered"/>
-                        <field name="position" class="o_field_bordered"/>
+                        <field name="name"  placeholder="Enter full name"/>
+                        <field name="dob" />
+                        <field name="phone" />
+                        <field name="email" />
+                        <field name="position" />
                     </group>
 
                     <!-- Address -->
                     <group string="Address">
-                        <field name="address" widget="text" placeholder="Enter address here" class="o_field_bordered"/>
+                        <field name="address" widget="text" placeholder="Enter address here" />
                     </group>
                 </sheet>
             </form>
