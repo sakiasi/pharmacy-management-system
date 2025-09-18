@@ -19,11 +19,6 @@
         'views/pharmacy_menu_views.xml',
     ],
     'images': ['static/description/icon.png'],
-    'assets': {
-        'web.assets_backend': [
-            'static/src/css/style.css',
-        ],
-    },
     'installable': True,
     'application': True,
     'auto_install': False
